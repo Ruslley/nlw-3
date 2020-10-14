@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Localize um orfanato | Happy</title>
+    <title>Lar das Meninas | Happy </title>
 
     <!--Link css map interactivy-->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
@@ -27,23 +27,31 @@
   </head>
 
   <body>
-    <div id="page-orphanage">
+    <div id="page-orphanages">
+
       <aside class="animate-right">
-       
+        
+        <header>
+          <img src="./public/images/map-marker.svg" alt="Happy" />
+
+          <h2>Escolha um orfanato no mapa</h2>
+          <p>Muitas crianças estão esperando sua visita :)</p>
+        </header>
+
+        <footer>
+          <strong>Rio do sul</strong>
+          <p>Santa Catarina</p>
+        </footer>
+
       </aside>
 
-     <main>
-       
-       <div class="orphanage-details">
-       <img src="./public/images/home.jpg" alt="Lar das meninas">
-       </div>
-
-     </main>
-      
-      
+      <div id="mapid" class="animate-appear"></div>
+      <a href="create-orphanage.html" class="create-orphanage" title="Cadastre um orfanato">
+        <img src="./public/images/plus.svg" alt="Criar orfanato">
+      </a>
     </div>
 
-    <script src="./public/scripts/page-orphanage.js">
+    <script src="./public/scripts/page-orphanages.js">
     
     </script>
 
