@@ -1,6 +1,6 @@
 //Create map
 
-const map = L.map('mapid').setView([-27.2056602, -49.6932565], 15);
+const map = L.map('mapid').setView([-27.2153286,-49.6432469], 15);
 
 //Create and add tilelayer
 
@@ -26,4 +26,4 @@ const popup = L.popup({
 
 //Create and add marker
 //Como o Objeto L. tem a propriedade icon não é necessario passar em L.markerL.marker([-27.2056602, -49.6932565], {icon:icon})
-L.marker([-27.2056602, -49.6932565], { icon }).addTo(map).bindPopup(popup);
+L.marker([-27.2153286,-49.6432469], { icon }).addTo(map).bindPopup(popup);
