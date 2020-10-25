@@ -1,4 +1,3 @@
-
 form {
   width: 70rem;
   margin: 6.4rem auto;
@@ -9,48 +8,44 @@ form {
   overflow: hidden;
   padding: 8rem;
 }
-fieldset{
+fieldset {
   border: 0;
 }
 
-fieldset + fieldset{
-   margin-top: 8rem;
+fieldset + fieldset {
+  margin-top: 8rem;
 }
 
-fieldset legend{
+fieldset legend {
   width: 100%;
   font-size: 3.2rem;
   line-height: 1.5;
   color: #5c8599;
-  font-weight:700;
+  font-weight: 700;
 
   border-bottom: 1px solid #d3e2e5;
   margin-bottom: 4rem;
   padding-bottom: 2.4rem;
-
-
 }
 
-.input-block + .input-block{
+.input-block + .input-block {
   margin-top: 2.4rem;
 }
 
 .input-block label {
-  color: #8FA7B3;
-  margin-bottom: .8rem;
-  line-height:1.5;
-
+  color: #8fa7b3;
+  margin-bottom: 0.8rem;
+  line-height: 1.5;
 }
-.input-block label span{
+.input-block label span {
   font-size: 1.4rem;
   color: #8fa7b3;
   margin-left: 2.4rem;
   line-height: 1.5;
-
 }
 .input-block input,
-.input-block textarea{
-  width:100%;
+.input-block textarea {
+  width: 100%;
 
   background: #f5f8fa;
   border: 1px solid #d3e2e5;
@@ -58,7 +53,7 @@ fieldset legend{
   color: #5c8599;
 }
 
-.input-block input{
+.input-block input {
   height: 6.4rem;
   padding: 0 1.6rem;
 }
@@ -70,7 +65,15 @@ fieldset legend{
   line-height: 2.8rem;
 }
 
-.input-block.images button{
+.input-block input:valid {
+  border: 1px solid #a1e9c5;
+}
+.input-block textarea:valid {
+  border: 1px solid #a1e9c5;
+}
+
+
+.input-block.images button {
   border: 1px dashed #96d2f0;
   width: 100%;
   background: #f5f8fa;
@@ -78,6 +81,24 @@ fieldset legend{
   padding: 0 1.6rem;
   margin-top: 2.4rem;
   border-radius: 2rem;
-  cursor: pointer  ;
+  cursor: pointer;
+}
 
+.new-upload {
+  position: relative;
+}
+
+.new-upload span {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  /* Texts / Botão */
+  background: #ffffff;
+  /* Back / Lines in white */
+  border: 1px solid #d3e2e5;
+  box-sizing: border-box;
+  border-radius: 10px;
+  display:flex;
+  padding: .6rem;
+  cursor: pointer;
 }
